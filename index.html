@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gaming Survey</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+   <div class="content">
+        <header>
+            <h1 id="title">Gaming Survey Form</h1>
+            <p id="description"> Fill in this survey form or else you'll die!!<br>
+                JK! You are in a safe zone...not!
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" class="labels" for="name">Name<span class="clue">*</span></label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+            </div>
+            <div class="form-group">    
+                <label id="email-label" class="labels" for="email">Email<span class="clue">*</span></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+            </div>
+            <div class="form-group">    
+                <label id="number-label" class="labels" for="number">Age</label>
+                <input
+                  type="number"
+                  name="age"
+                  id="number"
+                  min="5"
+                  max="110"
+                  class="form-control"
+                  placeholder="Enter your age"
+                  required
+                />
+            </div>
+            <div class="form-group">    
+                <label id="genre-label" class="labels" for="dropdown">Genre<span class="clue">*</span></label>
+                <select id="dropdown" name="genre" class="form-control" required>
+                    <option disabled selected value>Select your fav genre</option>
+                    <option value="rpg">RPG - MMORPG</option>
+                    <option value="rts">RTS</option>
+                    <option value="action">Adventure/Action</option>
+                    <option value="fps">FPS</option>
+                    <option value="moba">Moba</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">    
+                <p class="labels">What is your preferred platform?</p>
+                <label>
+                    <input 
+                    name="user-platform"
+                    value="PC"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                    />PC
+                </label>
+                <label>
+                    <input 
+                    name="user-platform"
+                    value="ps5"
+                    type="radio"
+                    class="input-radio"
+                    unchecked
+                    />PS5
+                </label>
+                <label>
+                    <input 
+                    name="user-platform"
+                    value="xbox"
+                    type="radio"
+                    class="input-radio"
+                    unchecked
+                    />XBox Series X/S
+                </label>
+                <label>
+                    <input 
+                    name="user-platform"
+                    value="nintendo"
+                    type="radio"
+                    class="input-radio"
+                    unchecked
+                    />Nintendo Switch
+                </label>
+            </div>
+            <div class="form-group">    
+                <p class="labels">What other gaming platforms did you like/have?</p>
+                <label>
+                    <input 
+                    name="old-platform"
+                    value="PS4"
+                    type="checkbox"
+                    class="input-checkbox"
+                    checked
+                    />PS4
+                </label>
+                <label>
+                    <input 
+                    name="old-platform"
+                    value="PS3"
+                    type="checkbox"
+                    class="input-checkbox"
+                    unchecked
+                    />PS3
+                </label>
+                <label>
+                    <input 
+                    name="old-platform"
+                    value="PS2"
+                    type="checkbox"
+                    class="input-checkbox"
+                    unchecked
+                    />PS2
+                </label>
+                <label>
+                    <input 
+                    name="old-platform"
+                    value="PS One"
+                    type="checkbox"
+                    class="input-checkbox"
+                    unchecked
+                    />PS One
+                </label>
+                <label>
+                    <input 
+                    name="old-platform"
+                    value="XBox ONE"
+                    type="checkbox"
+                    class="input-checkbox"
+                    unchecked
+                    />XBox ONE
+                </label>
+                <label>
+                    <input 
+                    name="old-platform"
+                    value="XBox 360"
+                    type="checkbox"
+                    class="input-checkbox"
+                    unchecked
+                    />XBox 360
+                </label>
+                <label>
+                    <input 
+                    name="old-platform"
+                    value="XBox"
+                    type="checkbox"
+                    class="input-checkbox"
+                    unchecked
+                    />XBox
+                </label>
+                <label>
+                    <input 
+                    name="old-platform"
+                    value="Nintendo GameCube"
+                    type="checkbox"
+                    class="input-checkbox"
+                    unchecked
+                    />Nintendo GameCube
+                </label>
+                <label>
+                    <input 
+                    name="old-platform"
+                    value="Nintendo 64"
+                    type="checkbox"
+                    class="input-checkbox"
+                    unchecked
+                    />Nintendo 64
+                </label>
+                <label>
+                    <input 
+                    name="old-platform"
+                    value="Nintendo Wii"
+                    type="checkbox"
+                    class="input-checkbox"
+                    unchecked
+                    />Nintendo Wii
+                </label>
+            </div>
+            <div class="form-group">
+                <p class="labels">Write down one of your most favorable and memorable, gaming experience</p>
+                <textarea 
+                    id="comments"
+                    class="input-textarea"
+                    name="comments"
+                    placeholder="Enter your experience here...">
+                </textarea>  
+            </div>
+            <div class="form-group">
+                <button id="submit" class="submit-button" name="submit">Submit</button>
+            </div>
+        </form>
+   </div>
+</body> 
+</html>  
